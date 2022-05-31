@@ -1,0 +1,37 @@
+import type { declensionArray } from '../types';
+
+var všechno: declensionArray = [
+  ['všechen', 'všechen', 'všechno', 'všechna'],
+  ['všeho', 'všeho', 'všeho', 'vší'],
+  ['všemu', 'všemu', 'všemu', 'vší'],
+  ['všeho', 'všechen', 'všechno', 'všechnu'],
+  ['všechen', 'všechen', 'všechno', 'všechna'],
+  ['všem', 'všem', 'všem', 'vší'],
+  ['vším', 'vším', 'vším', 'vší'],
+  ['všichni', 'všechny', 'všechna', 'všechny'],
+  'všech',
+  'všem',
+  ['všechny', 'všechny', 'všechna', 'všechny'],
+  ['všichni', 'všechny', 'všechna', 'všechny'],
+  'všech',
+  'všemi',
+];
+
+var to: declensionArray = [
+  ['ten', 'ten', 'to', 'ta'],
+  ['toho', 'toho', 'toho', 'té'],
+  ['tomu', 'tomu', 'tomu', 't'],
+  ['toho', 'ten', 'to', 'všechnu'],
+  ['ten', 'ten', 'to', 'ta'],
+  ['tom', 'tom', 'tom', 'té'],
+  ['tím', 'tím', 'tím', 'té'],
+  ['ti', 'ty', 'ta', 'ty'],
+  'těch',
+  'těm',
+  ['ty', 'ty', 'ta', 'ty'],
+  ['ti', 'ty', 'ta', 'ty'],
+  'těch',
+  'těmi/ěma',
+];
+
+export { to, všechno };
