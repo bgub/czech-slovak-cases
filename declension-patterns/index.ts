@@ -67,15 +67,16 @@ export function generateSimpleSentences(noun: nounDeclension) {
     let tempEnglishRes = '';
     let tempCzechRes = '';
 
-    if (i !== '1' && i !== '5') {
+    // if (i !== '1' && i !== '5') {
+    if (true) {
       tempEnglishRes =
         // getDefaultPreposition(declensionList[i]).preposition ||
-        'foo' +
-        ' ' +
+        // 'foo' +
+        // ' ' +
         getTo(noun, declensionNumber, false) +
         ' ' +
         getPrvní(noun, declensionNumber, false) +
-        '' +
+        ' ' +
         getNoun(noun, declensionNumber, false);
 
       tempCzechRes =
