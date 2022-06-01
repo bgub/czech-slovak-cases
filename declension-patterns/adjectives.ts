@@ -52,7 +52,7 @@ function getAdjectiveDeclensions(adjectiveRoot: string, type: 'soft' | 'hard') {
     }
   });
 
-  return newArray;
+  return newArray as declensionArray;
 }
 
 export let první = getAdjectiveDeclensions('prvn', 'soft');

@@ -2,9 +2,9 @@ import * as React from 'react';
 import './style.css';
 import { první, malý } from './declension-patterns/adjectives';
 import { muž } from './declension-patterns/masculine';
-import { generateSimpleSentence } from './declension-patterns';
+import { generateSimpleSentences } from './declension-patterns';
 
-let x = generateSimpleSentence(3, muž);
+let x = generateSimpleSentences(muž);
 
 export default function App() {
   return (

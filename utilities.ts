@@ -9,10 +9,6 @@ export function createDeclension(
 ): nounDeclension {
   let newPlural = plural || definition + 's';
 
-  if (caseArray.length != 14) {
-    newPlural = 'NA';
-  }
-
   return {
     gender: gender,
     caseArray: caseArray,
