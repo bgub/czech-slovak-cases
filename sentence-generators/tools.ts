@@ -4,7 +4,10 @@ import { nounDeclension, declensionArray, gender } from '../types';
 
 export let declensionList = ['1', '2', '3', '4', '4-m', '5', '6', '7'];
 
-export function getDefaultPreposition(desiredCase: string) {
+export function getPrepositions(
+  desiredCase: '2' | '3' | '4' | '4-m' | '6' | '7',
+  onlyDefault: boolean
+) {
   return prepositions.find(function (prep) {
     if (prep.case === desiredCase && prep.default) {
       return true;
