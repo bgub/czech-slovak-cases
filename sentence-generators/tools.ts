@@ -33,7 +33,7 @@ export function getItem(
 ) {
   let singleDec = plural ? noun[0] : noun[1];
 
-  let dec = noun[caseNumber - 1];
+  let dec = singleDec[caseNumber - 1];
 
   if (typeof dec === 'string') {
     return dec;
