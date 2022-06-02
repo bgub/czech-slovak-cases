@@ -8,8 +8,11 @@ export function getPrepositions(
   desiredCase: '2' | '3' | '4' | '4-m' | '6' | '7',
   onlyDefault: boolean
 ) {
-  return prepositions.find(function (prep) {
-    if (prep.case === desiredCase && prep.default) {
+  return prepositions.filter(function (prep) {
+    if (
+      prep.case === desiredCase &&
+      (!onlyDefault || (onlyDefault && prep.default))
+    ) {
       return true;
     }
   });
@@ -28,19 +31,27 @@ export function declensionToNumber(declensionName: string): number {
   return declensionNumber;
 }
 
-export function getItem(
-  noun: declensionArray,
-  caseNumber: number,
-  gender: gender,
-  plural: boolean
-) {
-  let singleDec = plural ? noun[0] : noun[1];
+type config = { caseNumber: number; gender: gender; plural: boolean };
 
-  let dec = singleDec[caseNumber - 1];
+export function getItem(noun: declensionArray, config: config): string {
+  let singleDec = config.plural ? noun[0] : noun[1];
+
+  let dec = singleDec[config.caseNumber - 1];
 
   if (typeof dec === 'string') {
     return dec;
   } else {
-    return dec[genderList[gender]];
+    return dec[genderList[config.gender]];
   }
+}
+
+export function transformArray(
+  config: config,
+  inputArray: Array<declensionArray>
+): Array<string> {
+  let r = [];
+  for (let i = 0; i < inputArray.length; i++) {
+    r[i] = getItem(inputArray[i], config);
+  }
+  return r;
 }

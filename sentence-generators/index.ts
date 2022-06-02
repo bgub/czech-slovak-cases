@@ -6,7 +6,7 @@ import {
   genderList,
   getItem,
   declensionToNumber,
-  getDefaultPreposition,
+  getPrepositions,
 } from './tools';
 
 import { nounDeclension, declensionArray, gender } from '../types';
