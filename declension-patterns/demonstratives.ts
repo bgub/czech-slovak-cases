@@ -1,37 +1,45 @@
 import type { declensionArray } from '../types';
 
 var všechno: declensionArray = [
-  ['všechen', 'všechen', 'všechno', 'všechna'],
-  ['všeho', 'všeho', 'všeho', 'vší'],
-  ['všemu', 'všemu', 'všemu', 'vší'],
-  ['všeho', 'všechen', 'všechno', 'všechnu'],
-  ['všechen', 'všechen', 'všechno', 'všechna'],
-  ['všem', 'všem', 'všem', 'vší'],
-  ['vším', 'vším', 'vším', 'vší'],
-  ['všichni', 'všechny', 'všechna', 'všechny'],
-  'všech',
-  'všem',
-  ['všechny', 'všechny', 'všechna', 'všechny'],
-  ['všichni', 'všechny', 'všechna', 'všechny'],
-  'všech',
-  'všemi',
+  [
+    ['všechen', 'všechen', 'všechno', 'všechna'],
+    ['všeho', 'všeho', 'všeho', 'vší'],
+    ['všemu', 'všemu', 'všemu', 'vší'],
+    ['všeho', 'všechen', 'všechno', 'všechnu'],
+    ['všechen', 'všechen', 'všechno', 'všechna'],
+    ['všem', 'všem', 'všem', 'vší'],
+    ['vším', 'vším', 'vším', 'vší'],
+  ],
+  [
+    ['všichni', 'všechny', 'všechna', 'všechny'],
+    'všech',
+    'všem',
+    ['všechny', 'všechny', 'všechna', 'všechny'],
+    ['všichni', 'všechny', 'všechna', 'všechny'],
+    'všech',
+    'všemi',
+  ],
 ];
 
 var to: declensionArray = [
-  ['ten', 'ten', 'to', 'ta'],
-  ['toho', 'toho', 'toho', 'té'],
-  ['tomu', 'tomu', 'tomu', 'té'],
-  ['toho', 'ten', 'to', 'tu'],
-  ['ten', 'ten', 'to', 'ta'],
-  ['tom', 'tom', 'tom', 'té'],
-  ['tím', 'tím', 'tím', 'tou'],
-  ['ti', 'ty', 'ta', 'ty'],
-  'těch',
-  'těm',
-  ['ty', 'ty', 'ta', 'ty'],
-  ['ti', 'ty', 'ta', 'ty'],
-  'těch',
-  'těmi/ěma',
+  [
+    ['ten', 'ten', 'to', 'ta'],
+    ['toho', 'toho', 'toho', 'té'],
+    ['tomu', 'tomu', 'tomu', 'té'],
+    ['toho', 'ten', 'to', 'tu'],
+    ['ten', 'ten', 'to', 'ta'],
+    ['tom', 'tom', 'tom', 'té'],
+    ['tím', 'tím', 'tím', 'tou'],
+  ],
+  [
+    ['ti', 'ty', 'ta', 'ty'],
+    'těch',
+    'těm',
+    ['ty', 'ty', 'ta', 'ty'],
+    ['ti', 'ty', 'ta', 'ty'],
+    'těch',
+    'těmi/ěma',
+  ],
 ];
 
 export { to, všechno };
