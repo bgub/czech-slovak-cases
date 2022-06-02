@@ -1,19 +1,13 @@
-import { žena } from './feminine';
-import { muž } from './masculine';
 import { prepositions } from '../prepositions';
-import { první, malý } from './adjectives';
-import { to as toDec, všechno } from './demonstratives';
+import { allNouns, první, malý, to, všechno } from '../declension-patterns';
+
+import {
+  declensionList,
+  declensionToNumber,
+  getDefaultPreposition,
+} from './tools';
+
 import { nounDeclension, declensionArray, gender } from '../types';
-
-let declensionList = ['1', '2', '3', '4', '4-m', '5', '6', '7'];
-
-function getDefaultPreposition(desiredCase: string) {
-  return prepositions.find(function (prep) {
-    if (prep.case === desiredCase && prep.default) {
-      return true;
-    }
-  });
-}
 
 let gList = {
   ma: 0,
