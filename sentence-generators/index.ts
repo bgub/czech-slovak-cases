@@ -13,15 +13,6 @@ import { nounDeclension, declensionArray, gender } from '../types';
 
 let [první, malý] = basicAdjectives;
 
-let getTo = (noun: nounDeclension, number: number, plural: boolean) =>
-  getItem(number, noun.gender, to, plural);
-
-let getPrvní = (noun: nounDeclension, number: number, plural: boolean) =>
-  getItem(number, noun.gender, první, plural);
-
-let getNoun = (noun: nounDeclension, number: number, plural: boolean) =>
-  getItem(number, noun.gender, noun.caseArray, plural);
-
 export function generateSimpleSentences(noun: nounDeclension) {
   let res = [];
 

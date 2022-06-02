@@ -26,9 +26,9 @@ export function declensionToNumber(declensionName: string): number {
 }
 
 export function getItem(
+  noun: declensionArray,
   caseNumber: number,
   gender: gender,
-  noun: declensionArray,
   plural: boolean
 ) {
   let singleDec = plural ? noun[0] : noun[1];
