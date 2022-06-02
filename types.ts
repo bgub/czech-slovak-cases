@@ -1,6 +1,6 @@
 export type singleDeclension = string | [string, string, string, string];
 
-type singleDeclensionArray = [
+export type singleDeclensionArray = [
   singleDeclension,
   singleDeclension,
   singleDeclension,
@@ -10,24 +10,10 @@ type singleDeclensionArray = [
   singleDeclension
 ];
 
-export type fullDeclensionArray = [
-  singleDeclension,
-  singleDeclension,
-  singleDeclension,
-  singleDeclension,
-  singleDeclension,
-  singleDeclension,
-  singleDeclension,
-  singleDeclension,
-  singleDeclension,
-  singleDeclension,
-  singleDeclension,
-  singleDeclension,
-  singleDeclension,
-  singleDeclension
+export type declensionArray = [
+  singleDeclensionArray | [],
+  singleDeclensionArray | []
 ];
-
-export type declensionArray = singleDeclensionArray | fullDeclensionArray;
 
 export type gender = 'ma' | 'mi' | 'n' | 'f';
 
