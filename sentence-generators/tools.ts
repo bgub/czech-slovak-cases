@@ -25,7 +25,7 @@ export function declensionToNumber(declensionName: string): number {
   return declensionNumber;
 }
 
-function getItem(
+export function getItem(
   caseNumber: number,
   gender: gender,
   noun: declensionArray,
