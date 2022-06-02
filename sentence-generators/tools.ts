@@ -10,6 +10,10 @@ export function getPrepositions(
   desiredCase: declensionName,
   onlyDefault: boolean
 ) {
+  if (desiredCase === '1' || desiredCase === '5') {
+    return false;
+  }
+
   return prepositions.filter(function (prep) {
     if (
       prep.case === desiredCase &&
