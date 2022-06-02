@@ -1,15 +1,9 @@
 import * as React from 'react';
 import './style.css';
-import { první, malý } from './declension-patterns/adjectives';
-import { muž } from './declension-patterns/masculine';
 
-import { žena } from './declension-patterns/feminine';
+import { generateSimpleSentences } from './sentence-generators';
 
-import { generateSimpleSentences } from './declension-patterns';
-
-let x = generateSimpleSentences(muž);
-
-let y = generateSimpleSentences(žena);
+let res = JSON.stringify(generateSimpleSentences());
 
 function arrayLoop(arr) {
   return (
@@ -25,8 +19,7 @@ export default function App() {
   return (
     <div>
       <h1>Hello StackBlitz!</h1>
-      <p>{arrayLoop(x)}</p>
-      <p>{arrayLoop(y)}</p>
+      <p>{res}</p>
     </div>
   );
 }

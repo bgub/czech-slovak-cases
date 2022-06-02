@@ -9,41 +9,26 @@ import {
   getPrepositions,
 } from './tools';
 
+
+
 import { nounDeclension, declensionArray, gender } from '../types';
 
 let [první, malý] = basicAdjectives;
 
-export function generateSimpleSentences(noun: nounDeclension) {
+export function generateSimpleSentences() {
   let res = [];
 
   for (var i in declensionList) {
-    let declensionName = declensionList[i];
-    let declensionNumberString = declensionName.replace(/[^1234567]/g, '');
-    let declensionNumber = Number(declensionNumberString);
-    console.log('declensionNumberString ' + declensionNumberString);
+    let declensionNumber = declensionToNumber(declensionList[i]);
     console.log('declensionNumber ' + declensionNumber);
 
-    let tempEnglishRes = '';
-    let tempCzechRes = '';
+    if (declensionNumber !== 1 && declensionNumber !== 5) {
 
-    // if (i !== '1' && i !== '5') {
-    if (true) {
-      tempEnglishRes =
-        // getDefaultPreposition(declensionList[i]).preposition ||
-        // 'foo' +
-        // ' ' +
-        getTo(noun, declensionNumber, false) +
-        ' ' +
-        getPrvní(noun, declensionNumber, false) +
-        ' ' +
-        getNoun(noun, declensionNumber, false);
+      let possiblePreps = getPrepositions(declensionList[i])
 
-      tempCzechRes =
-        //getDefaultPreposition(declensionList[i]).english +
-        ' ' + 'that' + ' ' + 'first' + ' ' + noun.objectiveCase;
     }
 
-    res.push(tempEnglishRes + ' - ' + tempCzechRes);
+    
   }
 
   return res;

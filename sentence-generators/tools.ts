@@ -4,8 +4,10 @@ import { nounDeclension, declensionArray, gender } from '../types';
 
 export let declensionList = ['1', '2', '3', '4', '4-m', '5', '6', '7'];
 
+type declensionName = '1' | '2' | '3' | '4' | '4-m' | '5' | '6' | '7';
+
 export function getPrepositions(
-  desiredCase: '2' | '3' | '4' | '4-m' | '6' | '7',
+  desiredCase: declensionName,
   onlyDefault: boolean
 ) {
   return prepositions.filter(function (prep) {
@@ -25,7 +27,7 @@ export let genderList = {
   f: 3,
 };
 
-export function declensionToNumber(declensionName: string): number {
+export function declensionToNumber(declensionName: declensionName): number {
   let declensionNumberString = declensionName.replace(/[^1234567]/g, '');
   let declensionNumber = Number(declensionNumberString);
   return declensionNumber;
