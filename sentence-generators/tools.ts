@@ -1,17 +1,29 @@
 import { prepositions } from '../prepositions';
 
-import { nounDeclension, declensionArray, gender } from '../types';
+import {
+  nounDeclension,
+  declensionArray,
+  declensionName,
+  gender,
+} from '../types';
 
-export let declensionList = ['1', '2', '3', '4', '4-m', '5', '6', '7'];
-
-type declensionName = '1' | '2' | '3' | '4' | '4-m' | '5' | '6' | '7';
+export let declensionList: Array<declensionName> = [
+  '1',
+  '2',
+  '3',
+  '4',
+  '4-m',
+  '5',
+  '6',
+  '7',
+];
 
 export function getPrepositions(
   desiredCase: declensionName,
   onlyDefault: boolean
 ) {
   if (desiredCase === '1' || desiredCase === '5') {
-    return false;
+    return [''];
   }
 
   return prepositions.filter(function (prep) {
@@ -40,13 +52,18 @@ export function declensionToNumber(declensionName: declensionName): number {
 type config = { caseNumber: number; gender: gender; plural: boolean };
 
 export function getItem(noun: declensionArray, config: config): string {
+  console.log('noun: ' + noun);
   let singleDec = config.plural ? noun[0] : noun[1];
 
+  console.log('single: ' + singleDec);
   let dec = singleDec[config.caseNumber - 1];
+
+  console.log('dec: ' + dec);
 
   if (typeof dec === 'string') {
     return dec;
   } else {
+    console.log(dec);
     return dec[genderList[config.gender]];
   }
 }

@@ -17,10 +17,19 @@ export type declensionArray = [
 
 export type gender = 'ma' | 'mi' | 'n' | 'f';
 
+export type declensionName = '1' | '2' | '3' | '4' | '4-m' | '5' | '6' | '7';
+
 export type nounDeclension = {
   gender: gender;
   caseArray: declensionArray;
   definition: string;
   plural?: string;
   objectiveCase?: string;
+};
+
+export type preposition = {
+  preposition: string;
+  case: declensionName;
+  english: string;
+  default?: true;
 };
