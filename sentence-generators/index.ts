@@ -37,21 +37,19 @@ export function generateSimpleSentences() {
   for (let dec of declensionList) {
     let declensionNumber = declensionToNumber(dec);
 
-    if (declensionNumber !== 1 && declensionNumber !== 5) {
-      let possiblePreps = getPrepositions(dec, onlyUseDefault);
-      let combos: comboType = cartesian([
-        possiblePreps,
-        [to],
-        basicAdjectives,
-        allNouns,
-        [true, false],
-        [declensionNumber],
-      ]);
+    let possiblePreps = getPrepositions(dec, onlyUseDefault);
+    let combos: comboType = cartesian([
+      possiblePreps,
+      [to],
+      basicAdjectives,
+      allNouns,
+      [true, false],
+      [declensionNumber],
+    ]);
 
-      console.log(combos);
+    console.log(combos);
 
-      res.push(combos);
-    }
+    res.push(combos);
   }
 
   let newRes = res.map((sent) => [

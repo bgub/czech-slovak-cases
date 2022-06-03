@@ -1,6 +1,6 @@
-import { createDeclension } from '../utilities';
+import { createNounDeclension } from '../utilities';
 
-export var žena = createDeclension(
+export var žena = createNounDeclension(
   'f',
   [
     ['žena', 'ženy', 'ženě', 'ženu', 'ženo!', 'ženě', 'ženou'],
@@ -10,7 +10,7 @@ export var žena = createDeclension(
   'women'
 );
 
-export var růže = createDeclension(
+export var růže = createNounDeclension(
   'f',
   [
     ['růže', 'růže', 'růži', 'růži', 'růže!', 'růži', 'růží'],
@@ -22,7 +22,7 @@ export var růže = createDeclension(
 
 // add ulice
 
-export var píseň = createDeclension(
+export var píseň = createNounDeclension(
   'f',
   [
     ['píseň', 'písně', 'písni', 'píseň', 'písni!', 'písni', 'písní'],
@@ -32,7 +32,7 @@ export var píseň = createDeclension(
   'songs'
 );
 
-export var kost = createDeclension(
+export var kost = createNounDeclension(
   'f',
   [
     ['kost', 'kosti', 'kosti', 'kost', 'kosti!', 'kosti', 'kostí'],

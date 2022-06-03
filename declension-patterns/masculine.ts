@@ -1,6 +1,6 @@
-import { createDeclension } from '../utilities';
+import { createNounDeclension } from '../utilities';
 
-export let pán = createDeclension(
+export let pán = createNounDeclension(
   'ma',
   [
     ['pán', 'pána', 'pánu/ovi', 'pána', 'páne!', 'pánu/ovi', 'pánem'],
@@ -10,7 +10,7 @@ export let pán = createDeclension(
   'lords'
 );
 
-export let hrad = createDeclension(
+export let hrad = createNounDeclension(
   'mi',
   [
     ['hrad', 'hradu', 'hradu', 'hrad', 'hrade!', 'hradě/u', 'hradem'],
@@ -20,7 +20,7 @@ export let hrad = createDeclension(
   'castles'
 );
 
-export let muž = createDeclension(
+export let muž = createNounDeclension(
   'ma',
   [
     ['muž', 'muže', 'muži/ovi', 'muže', 'muži!', 'muži/ovi', 'mužem'],
@@ -30,7 +30,7 @@ export let muž = createDeclension(
   'men'
 );
 
-export let soudce = createDeclension(
+export let soudce = createNounDeclension(
   'ma',
   [
     [
@@ -56,7 +56,7 @@ export let soudce = createDeclension(
   'men'
 );
 
-export let stroj = createDeclension(
+export let stroj = createNounDeclension(
   'mi',
   [
     ['stroj', 'stroje', 'stroji', 'stroj', 'stroji!', 'stroji', 'strojem'],
@@ -74,7 +74,7 @@ export let stroj = createDeclension(
   'machines'
 );
 
-export let předseda = createDeclension(
+export let předseda = createNounDeclension(
   'ma',
   [
     [

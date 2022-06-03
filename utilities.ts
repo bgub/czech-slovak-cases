@@ -1,6 +1,21 @@
-import type { declensionArray, gender, nounDeclension } from './types';
+import type {
+  declensionArray,
+  gender,
+  declension,
+  nounDeclension,
+} from './types';
 
 export function createDeclension(
+  caseArray: declensionArray,
+  definition: string
+): declension {
+  return {
+    caseArray: caseArray,
+    definition: definition,
+  };
+}
+
+export function createNounDeclension(
   gender: gender,
   caseArray: declensionArray,
   definition: string,

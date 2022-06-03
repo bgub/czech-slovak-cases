@@ -1,6 +1,6 @@
-import { createDeclension } from '../utilities';
+import { createNounDeclension } from '../utilities';
 
-export let město = createDeclension(
+export let město = createNounDeclension(
   'n',
   [
     ['město', 'města', 'městu', 'město', 'město!', 'městě/u', 'městem'],
@@ -10,7 +10,7 @@ export let město = createDeclension(
   'cities'
 );
 
-export let vízum = createDeclension(
+export let vízum = createNounDeclension(
   'n',
   [
     ['vízum', 'víza', 'vízu', 'vízum', 'vízum!', 'vízu', 'vízem'],
@@ -20,7 +20,7 @@ export let vízum = createDeclension(
   'visas'
 );
 
-export let moře = createDeclension(
+export let moře = createNounDeclension(
   'n',
   [
     ['moře', 'moře', 'moři', 'moře', 'moře!', 'moři', 'mořem'],
@@ -30,7 +30,7 @@ export let moře = createDeclension(
   'seas'
 );
 
-export let stavení = createDeclension(
+export let stavení = createNounDeclension(
   'n',
   [
     [
@@ -56,7 +56,7 @@ export let stavení = createDeclension(
   'buildings'
 );
 
-export let kuře = createDeclension(
+export let kuře = createNounDeclension(
   'n',
   [
     ['kuře', 'kuřete', 'kuřeti', 'kuře', 'kuře!', 'kuřeti', 'kuřetem'],
