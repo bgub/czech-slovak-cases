@@ -63,7 +63,7 @@ export function getItem(noun: declensionArray, config: config): string {
   if (typeof dec === 'string') {
     return dec;
   } else {
-    console.log(dec);
+    // console.log(dec);
     return dec[genderList[config.gender]];
   }
 }
