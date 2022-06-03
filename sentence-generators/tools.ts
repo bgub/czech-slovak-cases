@@ -52,13 +52,13 @@ export function declensionToNumber(declensionName: declensionName): number {
 type config = { caseNumber: number; gender: gender; plural: boolean };
 
 export function getItem(noun: declensionArray, config: config): string {
-  console.log('noun: ' + noun);
+  // console.log('noun: ' + noun);
   let singleDec = config.plural ? noun[0] : noun[1];
 
-  console.log('single: ' + singleDec);
+  // console.log('single: ' + singleDec);
   let dec = singleDec[config.caseNumber - 1];
 
-  console.log('dec: ' + dec);
+  // console.log('dec: ' + dec);
 
   if (typeof dec === 'string') {
     return dec;

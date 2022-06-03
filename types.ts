@@ -22,6 +22,7 @@ export type declensionName = '1' | '2' | '3' | '4' | '4-m' | '5' | '6' | '7';
 export type declension = {
   caseArray: declensionArray;
   definition: string;
+  plural?: string;
 };
 
 export interface nounDeclension extends declension {

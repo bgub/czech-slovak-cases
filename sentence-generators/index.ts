@@ -12,6 +12,7 @@ import {
 
 import {
   nounDeclension,
+  declension,
   declensionArray,
   declensionName,
   preposition,
@@ -24,8 +25,8 @@ let onlyUseDefault = false;
 
 type comboType = [
   preposition | '',
-  declensionArray,
-  declensionArray,
+  declension,
+  declension,
   nounDeclension,
   boolean,
   number
@@ -49,17 +50,17 @@ export function generateSimpleSentences() {
 
     console.log(combos);
 
-    res.push(combos);
+    res = res.concat(combos);
   }
 
   let newRes = res.map((sent) => [
     sent[0] === '' ? '' : sent[0].preposition,
-    getItem(sent[1], {
+    getItem(sent[1].caseArray, {
       caseNumber: sent[5],
       gender: sent[3].gender,
       plural: sent[4],
     }),
-    getItem(sent[2], {
+    getItem(sent[2].caseArray, {
       caseNumber: sent[5],
       gender: sent[3].gender,
       plural: sent[4],
@@ -72,6 +73,6 @@ export function generateSimpleSentences() {
   ]);
 
   console.log(newRes);
-  console.log(res);
-  return res;
+  console.log(newRes.length);
+  return newRes;
 }

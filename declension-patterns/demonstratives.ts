@@ -1,6 +1,8 @@
+import { createDeclension } from '../utilities';
+
 import type { declensionArray } from '../types';
 
-var všechno: declensionArray = [
+var všechnoArray: declensionArray = [
   [
     ['všechen', 'všechen', 'všechno', 'všechna'],
     ['všeho', 'všeho', 'všeho', 'vší'],
@@ -21,7 +23,7 @@ var všechno: declensionArray = [
   ],
 ];
 
-var to: declensionArray = [
+var toArray: declensionArray = [
   [
     ['ten', 'ten', 'to', 'ta'],
     ['toho', 'toho', 'toho', 'té'],
@@ -42,4 +44,5 @@ var to: declensionArray = [
   ],
 ];
 
-export { to, všechno };
+export let to = createDeclension(toArray, 'that', 'those');
+export let všechno = createDeclension(všechnoArray, 'all');

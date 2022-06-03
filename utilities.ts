@@ -7,11 +7,13 @@ import type {
 
 export function createDeclension(
   caseArray: declensionArray,
-  definition: string
+  definition: string,
+  plural?: string
 ): declension {
   return {
     caseArray: caseArray,
     definition: definition,
+    plural: plural || definition,
   };
 }
 
@@ -22,7 +24,7 @@ export function createNounDeclension(
   plural?: string,
   objectiveCase?: string
 ): nounDeclension {
-  let newPlural = plural || definition + 's';
+  let newPlural = plural || definition;
 
   return {
     gender: gender,
