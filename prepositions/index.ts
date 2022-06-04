@@ -27,9 +27,9 @@ let prep4 = [
 
 let prep4m = [
   {
-    preposition: 'mezi',
+    preposition: 'za',
     case: '4-m',
-    english: 'among (motion)',
+    english: '(motion) behind',
     default: true,
   },
 ];

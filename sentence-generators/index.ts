@@ -77,32 +77,32 @@ export function generateSimpleSentences() {
     englishSentence += english(sent[1]) + ' ';
 
     langSentence +=
-      ' ' +
       getItem(sent[1].caseArray, {
         caseNumber: caseNumber,
         gender: gender,
         plural: plural,
-      });
+      }) + ' ';
 
     englishSentence += english(sent[2]) + ' ';
 
     langSentence +=
-      ' ' +
       getItem(sent[2].caseArray, {
         caseNumber: caseNumber,
         gender: gender,
         plural: plural,
-      });
+      }) + ' ';
 
-    englishSentence += english(sent[3]) + ' ';
+    englishSentence += english(sent[3]);
 
-    langSentence +=
-      ' ' +
-      getItem(sent[3].caseArray, {
-        caseNumber: caseNumber,
-        gender: gender,
-        plural: plural,
-      });
+    langSentence += getItem(sent[3].caseArray, {
+      caseNumber: caseNumber,
+      gender: gender,
+      plural: plural,
+    });
+
+    if (caseNumber === 5) {
+      englishSentence += '!';
+    }
 
     return englishSentence + ' - ' + langSentence;
   });

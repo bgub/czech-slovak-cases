@@ -76,8 +76,8 @@ export let soudce = createNounDeclension(
       'soudci', // 'soudci/ema'
     ],
   ],
-  'man',
-  'men'
+  'judge',
+  'judges'
 );
 
 export let stroj = createNounDeclension(
