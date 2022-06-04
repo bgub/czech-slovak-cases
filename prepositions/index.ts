@@ -20,7 +20,7 @@ let prep4 = [
   {
     preposition: 'skrze',
     case: '4',
-    english: 'without',
+    english: 'through',
     default: true,
   },
 ];
