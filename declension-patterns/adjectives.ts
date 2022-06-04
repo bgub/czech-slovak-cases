@@ -16,7 +16,15 @@ export var softEndings: declensionArray = [
     ['ím', 'ím', 'ím', 'í'],
     ['ím', 'ím', 'ím', 'í'],
   ],
-  ['í', 'ích', 'ím', 'í', 'í', 'ích', 'ími/íma'],
+  [
+    'í',
+    'ích',
+    'ím',
+    'í',
+    'í',
+    'ích',
+    'ími', // 'ími/íma'
+  ],
 ];
 
 export var hardEndings: declensionArray = [
@@ -36,7 +44,7 @@ export var hardEndings: declensionArray = [
     ['é', 'é', 'á', 'é'],
     ['í', 'é', 'á', 'é'],
     'ých',
-    'ými/ýma',
+    'ými', // 'ými/ýma',
   ],
 ];
 

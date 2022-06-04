@@ -4,7 +4,15 @@ export let město = createNounDeclension(
   'n',
   [
     ['město', 'města', 'městu', 'město', 'město!', 'městě/u', 'městem'],
-    ['města', 'měst', 'městům', 'města', 'města!', 'městech', 'městy/ama'],
+    [
+      'města',
+      'měst',
+      'městům',
+      'města',
+      'města!',
+      'městech',
+      'městy', // 'městy/ama'
+    ],
   ],
   'city',
   'cities'
@@ -14,7 +22,15 @@ export let vízum = createNounDeclension(
   'n',
   [
     ['vízum', 'víza', 'vízu', 'vízum', 'vízum!', 'vízu', 'vízem'],
-    ['víza', 'víz', 'vízům', 'víza', 'víza!', 'vízech', 'vízy/ama'],
+    [
+      'víza',
+      'víz',
+      'vízům',
+      'víza',
+      'víza!',
+      'vízech',
+      'vízy', // 'vízy/ama'
+    ],
   ],
   'visa',
   'visas'
@@ -24,7 +40,15 @@ export let moře = createNounDeclension(
   'n',
   [
     ['moře', 'moře', 'moři', 'moře', 'moře!', 'moři', 'mořem'],
-    ['moře', 'moří', 'mořím', 'moře', 'moře!', 'mořích', 'moři/ema'],
+    [
+      'moře',
+      'moří',
+      'mořím',
+      'moře',
+      'moře!',
+      'mořích',
+      'moři', // 'moři/ema'
+    ],
   ],
   'sea',
   'seas'
@@ -49,7 +73,7 @@ export let stavení = createNounDeclension(
       'stavení',
       'stavení!',
       'staveních',
-      'staveními/íma',
+      'staveními', // 'staveními/íma'
     ],
   ],
   'building',
@@ -67,7 +91,7 @@ export let kuře = createNounDeclension(
       'kuřata',
       'kuřata!',
       'kuřatech',
-      'kuřaty/ama',
+      'kuřaty', // 'kuřaty/ama'
     ],
   ],
   'chick',

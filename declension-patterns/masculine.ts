@@ -4,7 +4,15 @@ export let pán = createNounDeclension(
   'ma',
   [
     ['pán', 'pána', 'pánu/ovi', 'pána', 'páne!', 'pánu/ovi', 'pánem'],
-    ['páni/ové', 'pánů', 'pánům', 'pány', 'páni/ové!', 'pánech', 'pány/ama'],
+    [
+      'páni/ové',
+      'pánů',
+      'pánům',
+      'pány',
+      'páni/ové!',
+      'pánech',
+      'pány', // 'pány/ama'
+    ],
   ],
   'lord',
   'lords'
@@ -14,7 +22,15 @@ export let hrad = createNounDeclension(
   'mi',
   [
     ['hrad', 'hradu', 'hradu', 'hrad', 'hrade!', 'hradě/u', 'hradem'],
-    ['hrady', 'hradů', 'hradům', 'hrady', 'hrady!', 'hradech', 'hrady/ama'],
+    [
+      'hrady',
+      'hradů',
+      'hradům',
+      'hrady',
+      'hrady!',
+      'hradech',
+      'hrady', // 'hrady/ama'
+    ],
   ],
   'castle',
   'castles'
@@ -24,7 +40,15 @@ export let muž = createNounDeclension(
   'ma',
   [
     ['muž', 'muže', 'muži/ovi', 'muže', 'muži!', 'muži/ovi', 'mužem'],
-    ['muži', 'mužů', 'mužům', 'muže', 'muži!', 'mužích', 'muži/ema'],
+    [
+      'muži',
+      'mužů',
+      'mužům',
+      'muže',
+      'muži!',
+      'mužích',
+      'muži', // 'muži/ema'
+    ],
   ],
   'man',
   'men'
@@ -49,7 +73,7 @@ export let soudce = createNounDeclension(
       'soudce',
       'soudci/ovi!',
       'soudcích',
-      'soudci/ema',
+      'soudci', // 'soudci/ema'
     ],
   ],
   'man',
@@ -67,7 +91,7 @@ export let stroj = createNounDeclension(
       'stroje',
       'stroje!',
       'strojích',
-      'stroji/ema',
+      'stroji', // 'stroji/ema'
     ],
   ],
   'machine',
@@ -93,7 +117,7 @@ export let předseda = createNounDeclension(
       'předsedy',
       'předsedové!',
       'předsedech',
-      'předsedy/ama',
+      'predsedy', // 'předsedy/ama'
     ],
   ],
   'chairman',

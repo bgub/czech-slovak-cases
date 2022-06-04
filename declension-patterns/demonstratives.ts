@@ -40,7 +40,7 @@ var toArray: declensionArray = [
     ['ty', 'ty', 'ta', 'ty'],
     ['ti', 'ty', 'ta', 'ty'],
     'těch',
-    'těmi/ěma',
+    'těmi', // 'těmi/ěma',
   ],
 ];
 
