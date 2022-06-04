@@ -3,7 +3,7 @@ import './style.css';
 
 import { generateSimpleSentences } from './sentence-generators';
 
-let res = JSON.stringify(generateSimpleSentences());
+let res = generateSimpleSentences();
 
 function arrayLoop(arr) {
   return (
@@ -18,8 +18,9 @@ function arrayLoop(arr) {
 export default function App() {
   return (
     <div>
+      {' '}
       <h1>Hello StackBlitz!</h1>
-      <p>{res}</p>
+      <div>{arrayLoop(res)}</div>
     </div>
   );
 }

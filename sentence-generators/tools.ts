@@ -53,7 +53,7 @@ type config = { caseNumber: number; gender: gender; plural: boolean };
 
 export function getItem(noun: declensionArray, config: config): string {
   // console.log('noun: ' + noun);
-  let singleDec = config.plural ? noun[0] : noun[1];
+  let singleDec = config.plural ? noun[1] : noun[0];
 
   // console.log('single: ' + singleDec);
   let dec = singleDec[config.caseNumber - 1];
